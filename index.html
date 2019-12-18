@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="functions.js">
-    
-    </script>
+   
 </head>
 <body>
     <div class="left"><p>Your Wins</p></div>
@@ -19,18 +17,24 @@
     <div class="center"><h1>Rock, Paper, Scissors</h1></div>
 
     <div class="center"><h3>First to 3, wins the game.</h3></div>
+    
     <div class="center"></div>
-    <div>
-        <div  class="center color"><button class="rock" onclick="document.write(playRound('Rock', computerPlay()));">Rock</button>
-            
-        <button class="paper" onclick="document.write(playRound('Paper', computerPlay()));">Paper</button>
-        <button class="scissors" onclick="document.write(playRound('Scissors', computerPlay()));">Scissors</button></div>
-    </div>
+    
+        <div class="center color">
+        <button  onclick="playRound('Rock', computerPlay());">Rock</button>        
+        <button  onclick="playRound('Paper', computerPlay());">Paper</button>
+        <button  onclick="playRound('Scissors', computerPlay());">Scissors</button>
+        <p><span id='display'></span></p>
+        </div>
+        
+</div>
     <!--Place this code under Rock Button -- Fix Scope Issue with (move)
     <div class="center color"><script>document.write(playRound(playerSelection(move), computerPlay()));</script></div>-->
     
     <div class="center color"><button>Re-Start Game</button></div>
-    <div><script></script></div>
+    <script type="text/javascript" src="functions.js">
+    
+    </script>
 
     
 </body>

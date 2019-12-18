@@ -34,3 +34,6 @@ button {
     display: inline-block;
     font-size: 26px;
   }
+  #message {
+      font-size: 25px;
+  }
